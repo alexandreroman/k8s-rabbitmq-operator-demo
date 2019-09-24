@@ -1,0 +1,12 @@
+---
+apiVersion: rabbitmq.pivotal.io/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: rmqdemo
+  namespace: k8s-rmq-operator
+spec:
+  # Let the operator create a RabbitMQ cluster for you:
+  # credentials will be generated and stored as K8s secrets.
+  replicas: 1
+  persistence:
+    storage: 10Gi

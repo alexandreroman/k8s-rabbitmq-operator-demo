@@ -1,0 +1,16 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          # Bind this process to a RabbitMQ queue.
+          destination: k8srmq.counter
+server:
+  # Use a different port value for consumer since we want to run
+  # producer and consumer on the same host when developing this app.
+  port: ${PORT:8081}

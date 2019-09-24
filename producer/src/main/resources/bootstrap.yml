@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: k8s-rmq-producer

@@ -1,0 +1,48 @@
+body {
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    background: #222f38;
+    color: white;
+    text-align: left;
+    margin: 5em auto;
+    width: 60%;
+
+}
+
+a, a:visited {
+    color: lightblue;
+}
+
+h1 {
+    font-weight: bold;
+    color: #7EB050;
+    font-size: 250%;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.counter {
+    font-size: 180%;
+}
+
+section {
+    margin: 2em 0;
+}
+
+footer {
+    margin-top: 3em;
+}
+
+header p {
+    float:left;
+    margin-right: 1em;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 14px;
+        width: 80%;
+    }
+}

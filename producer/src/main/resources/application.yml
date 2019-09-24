@@ -1,0 +1,12 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          # All increment request message will be sent to this RabbitMQ queue.
+          destination: k8srmq.counter
