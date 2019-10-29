@@ -23,6 +23,9 @@ spec:
         - name: producer
           image: alexandreroman/k8s-rmq-producer
           imagePullPolicy: Always
+          resources:
+            limits:
+              memory: 1Gi
           ports:
             - containerPort: 8080
           env:
@@ -76,6 +79,9 @@ spec:
         - name: consumer
           image: alexandreroman/k8s-rmq-consumer
           imagePullPolicy: Always
+          resources:
+            limits:
+              memory: 1Gi
           ports:
             - containerPort: 8080
           env:
